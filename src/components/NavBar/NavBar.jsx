@@ -1,8 +1,25 @@
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+/*import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";*/
 import CartWidget from "../CartWidget/CartWidget";
+import "./NavBar.css";
 
 const NavBar = () =>{
     return(
+      <div className="nav">
+        <div className="logo">
+          <h2>The Books Club</h2>
+        </div>
+        <div links>
+            <ul className="nav-links">
+              <li>Novelas</li>
+              <li>Historia</li>
+              <li>Geografia</li>
+            </ul>
+        </div>
+        <div className="carrito">
+          <CartWidget/>
+        </div>
+      </div>
+      /*
       <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,7 +40,7 @@ const NavBar = () =>{
         <CartWidget />
       </Container>
     </Navbar>
-
+      */
     )
 }
 

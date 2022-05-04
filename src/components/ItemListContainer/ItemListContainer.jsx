@@ -24,10 +24,6 @@ const ItemListContainer = ({ greeting }) =>{
         <>
         <section>
             <h3>{greeting}</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Modi quisquam error necessitatibus in, explicabo, voluptatibus enim quae, 
-                facere commodi voluptatum nihil! Sit eveniet consequuntur labore nesciunt ipsa alias nulla quidem?
-            </p>
         </section>
         <section>
             <ItemList libros= { libros } />
