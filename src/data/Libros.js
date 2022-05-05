@@ -5,6 +5,7 @@ const Libros = [{
     editorial : "Penguin random house", 
     precio: 18,
     stock: 8,
+    imagen: "https://pictures.abebooks.com/inventory/md/md30626702718.jpg"
 },
 {
     id : 2,
@@ -13,6 +14,7 @@ const Libros = [{
     editorial : "libros del asteroide", 
     precio: 10,
     stock: 5,
+    imagen: "https://pictures.abebooks.com/isbn/9788492663439-es.jpg"
 },
 {
     id : 3,
@@ -21,6 +23,7 @@ const Libros = [{
     editorial : "La casa del libro", 
     precio: 20,
     stock: 15,
+    imagen: "https://static.fnac-static.com/multimedia/Images/ES/NR/63/35/5b/5977443/1540-1.jpg"
 }];
 
 export default Libros;

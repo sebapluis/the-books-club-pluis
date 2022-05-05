@@ -13,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<ItemListContainer greeting="Bienvenidos"/>}/>
         <Route path="/detalle" element={<ItemDetailContainer />} />
-      {/*<ItemDetailContainer />*/}
       </Routes>
     </div>
   );

@@ -15,7 +15,7 @@ const ItemDetailContainer = () =>{
     const [libro, setLibro] = useState([]);
     useEffect ( () => {
         getLibro().then (response => {
-          setLibro (response[2])
+          setLibro (response[1])
         })
     }, []);
 
