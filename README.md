@@ -1,3 +1,16 @@
+Este proyecto busca simular un ecommerce de libros, donde el usuario pueda tener una vista general del catalogo, como asi poder filtrar los libros por categorias (novelas, tecnologia, historia), entrar en el libro que desee y poder leer una descripcion detalla y finalmente realizar la compra.
+Este proyecto se ecuentra en desarrollo, pero hasta el momento cuenta con dos paginas a mostrar (ItemListContainer, ItemDetailContainer) a las cuales a traves de import y export se fueron creando con distintos componentes (ej: contador, navbar).
+IitemListContainer cuenta con una funcion getLibro a la que se le pasa un parametro id, dentro de esta funcion tenemos una promesa que devuelve una const con el array que contiene los libros y otra const que a traves del metodo filter los filtra segun su categoria haciendo que en la url al colocar la categoria del libro solo muestre los que coincidan con dicha busqueda (ya que en app.js antes hicimos el route), ademas a traves de un ternario hicimos que si la categoria no coincidia o no se detallaba se muestre el catalogo entero (todo con un setTimeOut que simula el llamado a un servidor).
+Luego la const ItemListContainer empieza con un array vacio (useState) otra const la cual igualamos con useParams() para acceder a los parametros de la ruta, luego cambiamos el estado con useEffect ejecutando la funcion getLibros pasandole el paramtro de categoryId, y finalmente el array final lo llenamos con categoryId para que cada vez que cambie de categoria se ejecute.
+ItemDetailContainer cuenta con una forma similar con la diferencia que se tiene como parametro el id y luego en la const Item DetailContainer se imprime ItemDetail la cual cuenta con una card de modelo.
+La navbar esta linkeada con NavLink y el detalle de las cards con Link para acceder a las rutas correspondientes.
+En este proyecto uso bootstrap el cual instale con el metodo npm y font awesome el cual utilice para agregar el carrito en la navbar.
+Si bien este proyecto cuenta con estilos no son los definitivos ya que no son responsive ni se ven como tengo en mente que se vean una vez finalizado el proyecto, los cuales ire modificando y arreglando.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
