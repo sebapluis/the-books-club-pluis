@@ -10,11 +10,14 @@ function ItemDetail( {libro} ) {
                 <img src={libro.imagen} alt="Imagen del libro" />
             </div> 
             <div className='flex'>
-                <h1>{libro.title}</h1>
-                <h3>Autor: {libro.autor}</h3>
-                <h4>Editorial: {libro.editorial}</h4>
-                <h4>Precio: €{libro.precio}</h4>
-                <ItemCount/>
+                <h3>{libro.title}</h3>
+                <p><b>Autor</b>: {libro.autor}</p>
+                <p><b>Editorial</b>: {libro.editorial}</p>
+                <div className='sinopsis'>
+                    <p><b>Sinopsis</b>: {libro.sinopsis}</p>
+                </div>    
+                <p><b>Precio</b>: €{libro.precio}</p>
+                <ItemCount stock={libro.stock} initial={1} />
             </div>   
         </div>
         )

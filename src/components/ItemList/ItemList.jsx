@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+/*import { Button } from 'react-bootstrap';*/
 import Card  from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 import "./ItemList.css";
 
 function ItemList( {libros} ) {
@@ -20,7 +21,9 @@ function ItemList( {libros} ) {
                 <br/>
                 <h5>{thislibro.autor}</h5>
             </Card.Text>
-              <Button variant="secondary" classname="centrado">Detalle</Button>  
+              <Link to={"/item/" + thislibro?.id}>
+                <button>Detalle</button>
+              </Link>  
             </Card.Body>
             </Card>  
         </div>

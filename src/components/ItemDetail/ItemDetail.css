@@ -8,8 +8,8 @@
 }
 
 .containerImagen{
-    width: 50%;
-    height: 50%;   
+    width: 30%;
+    height: 100%;   
 }
 
 .flex{
@@ -17,4 +17,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.sinopsis{
+    width: 80%;
+    margin: auto;
 }
