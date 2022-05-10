@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -30,7 +30,7 @@
     width: 30%;
     text-decoration: none;
     color: antiquewhite;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    
 }
 
 a {
