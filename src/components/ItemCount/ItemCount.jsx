@@ -16,9 +16,6 @@ const ItemCount = (props) => {
         <button onClick= {resta} > - </button>
         <span className='cantidad'> { count } </span>
         <button onClick= {suma} > + </button>
-      <div>
-        <button>Comprar</button>
-      </div>
     </div> 
   )
 }
