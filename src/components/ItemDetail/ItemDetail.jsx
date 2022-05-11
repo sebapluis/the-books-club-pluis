@@ -27,11 +27,10 @@ function ItemDetail( {libro} ) {
                     <p><b>Sinopsis</b>: {libro.sinopsis}</p>
                 </div>    
                 <p><b>Precio</b>: €{libro.precio}</p>
-                <ItemCount stock={libro.stock} initial={1} onAdd = {()=>{}} />
                 <div>
-                    { cantidadDeProductos ?
-                     <ItemCount stock={libro.stock} initial={1} onAdd = {addHandler} /> :
-                     <button><Link to="/Cart" className='comprar'>Comprar ( {cantidadDeProductos} Items)</Link></button>
+                    {cantidadDeProductos ?
+                         <button><Link to='/cart'>Finalizar compra de:{ cantidadDeProductos } libros</Link></button> :
+                         <ItemCount initial={0} stock={libro.stock} onAdd={addHandler} />
                     }
                 </div>
             </div>   
