@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useCartContext } from '../../context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 import "./ItemDetail.css";
 
@@ -9,8 +10,11 @@ function ItemDetail( {libro} ) {
 
     const [ cantidadDeProductos, setCantidadDeProductos ] = useState (null); 
 
+    const { addToCart } = useCartContext();
+
     function addHandler (quantityToAdd) {
-        setCantidadDeProductos (quantityToAdd)
+        setCantidadDeProductos (quantityToAdd);
+        addToCart(libro, quantityToAdd);
     }
 
 

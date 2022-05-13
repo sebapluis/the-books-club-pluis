@@ -17,7 +17,10 @@ const NavBar = () =>{
             </ul>
         </div>
         <div className="carrito">
+        <NavLink to="/cart"  className={nav => nav.isActive ? "nav-active" : ""}>
           <CartWidget/>
+        </NavLink>
+          
         </div>
       </div>
     )
