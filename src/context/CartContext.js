@@ -33,12 +33,20 @@ export function CartContextProvider( {children} ) {
         setCartList (cartList.filter( item => item.id !== id ))
     };
 
+    const deleteOneItem = (id) => {
+        if (unitsPerProduct(id) === 1){
+            return deleteById(id)
+        }
+        return setCartList( cartList.map( product => product.id === id ? {...product, quantity: product.quantity - 1}
+            : product) )
+    };
+
     const totalCount = () => {
-        return cartList.reduce( (total, item) => total + item.quantity, 0 )
+        return cartList.reduce ( (total,item) => total + item.quantity, 0)
     };
 
     const totalPrice = () => {
-        return cartList.reduce( (total, item) => total + item.quantity * item.price )
+        return cartList.reduce ( (total, item) => total + item.quantity * item.precio,0)
     };
 
     const unitsPerProduct = (id) => {
@@ -46,7 +54,7 @@ export function CartContextProvider( {children} ) {
     }
 
   return (
-    <CartContext.Provider value= {{ cartList, addToCart, emptyCart, deleteById, totalCount, totalPrice, unitsPerProduct}}>
+    <CartContext.Provider value= {{ cartList, addToCart, emptyCart, deleteById, totalCount, totalPrice, unitsPerProduct, deleteOneItem}}>
         {children}
     </CartContext.Provider>
   )

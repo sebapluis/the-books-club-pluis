@@ -1,3 +1,9 @@
 .cart{
     font-size: 25px;
+    color: antiquewhite;
+}
+
+.none{
+    text-decoration: none;
+    color: antiquewhite;
 }

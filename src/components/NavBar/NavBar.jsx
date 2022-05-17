@@ -4,6 +4,8 @@ import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css";
 
 const NavBar = () =>{
+ 
+  
     return(
       <div className="nav">
         <div className="logo">
@@ -18,7 +20,7 @@ const NavBar = () =>{
         </div>
         <div className="carrito">
         <NavLink to="/cart"  className={nav => nav.isActive ? "nav-active" : ""}>
-          <CartWidget/>
+          <CartWidget/>         
         </NavLink>
           
         </div>
