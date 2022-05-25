@@ -33,12 +33,9 @@ const ItemListContainer = ({ greeting }) =>{
 
     return (
         <>
-        <section>
-            <h3>{greeting}</h3>
-        </section>
-        <section>
-            <ItemList libros= { libros } />
-        </section>
+           <div className="container">
+                <ItemList libros= { libros } /> 
+            </div>                
         </>
     )
 }

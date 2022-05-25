@@ -1,32 +1,24 @@
-.flex-container{
-    margin: 10px;
-    width: 100%;
-    height: 100%;
+.ancho{
     display: flex;
-    justify-content: center;
+    width: 100%;
+}
+
+.imgContainer{
+    width: 50%;
+}
+
+.infoContainer{
+    width: 50%;
+}
+
+.centrado{
     text-align: center;
 }
 
-.containerImagen{
-    width: 30%;
-    height: 100%;   
-}
-
-.flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: auto;
-}
-
-.sinopsis{
-    width: 80%;
-    margin: auto;
-}
-
-.comprar, link{
-    color: black;
+.compra{
     text-decoration: none;
+    color: black;
+}
+.compra:hover{
+    color: antiquewhite;
 }

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from "react-router-dom";
 import { CartContextProvider } from './context/CartContext';
 import { initializeApp } from "firebase/app";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const firebaseConfig = {
   apiKey: "AIzaSyArfe8WF3elM6al3Rnm3T_A22ksMYAiujc",

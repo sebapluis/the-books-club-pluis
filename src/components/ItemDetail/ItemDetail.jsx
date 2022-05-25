@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 import "./ItemDetail.css";
+import { Button } from 'react-bootstrap';
 
 
 
@@ -19,27 +20,27 @@ function ItemDetail( {libro} ) {
 
 
   return (
-        <div className='flex-container mt-2'>
-            <div className='containerImagen'>
-                <img src={libro.imagen} alt="Imagen del libro" />
-            </div> 
-            <div className='flex'>
-                <h3>{libro.title}</h3>
-                <p><b>Autor</b>: {libro.autor}</p>
-                <p><b>Editorial</b>: {libro.editorial}</p>
-                <div className='sinopsis'>
-                    <p><b>Sinopsis</b>: {libro.sinopsis}</p>
-                </div>    
-                <p><b>Precio</b>: €{libro.precio}</p>
-                <div>
+    <div className='container'>
+        <div className='ancho mt-3 mb-3'>
+            <div className='imgContainer'>
+                <img src={libro.imagen} alt="Imagen del libro" className='img-fluid' />
+            </div>
+            <div className='infoContainer'>
+                <h3 className='centrado'>{libro.title}</h3>
+                <p className='centrado'><b>Autor</b>: {libro.autor}</p>
+                <p className='centrado'><b>Editorial</b>: {libro.editorial}</p>
+                <p className='centrado'><b>Sinopsis</b>: {libro.sinopsis}</p>
+                <p className='centrado'><b>Precio</b>: €{libro.precio}</p>
+                <div className='centrado'>
                     {cantidadDeProductos ?
-                         <button><Link to='/cart'>Finalizar compra de:{ cantidadDeProductos } libros</Link></button> :
+                         <Button variant="outline-dark"><Link to='/cart' className='compra'>Finalizar compra de: { cantidadDeProductos } libros</Link></Button> :
                          <ItemCount initial={0} stock={libro.stock} onAdd={addHandler} />
                     }
                 </div>
-            </div>   
+            </div>
         </div>
-        )
+    </div>
+  )
     }
 
 

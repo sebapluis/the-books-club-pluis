@@ -1,73 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-}
-
-.nav{
-    background: #005555;
-    color: antiquewhite;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 10%;
-}
-
-.nav-active{
-    font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 .logo{
-    width: auto;
-    cursor: pointer;
-    width: 30%;
-    text-decoration: none;
-    color: antiquewhite;
-    
+    font-family: 'Amatic SC', cursive;
 }
 
-a {
-    text-decoration: none;
-    color: antiquewhite;
-}
 
-a:hover{
-    color:aqua;
-}
 
-.links{
-    width: 30%;
-}
-
-li a{
-    text-decoration: none;
-    color: antiquewhite;
-}
-
-li a:hover{
-    color:aqua;
-}
-
-ul li {
-    display: inline-block;
-    padding: 0 20px;
-    font-size: 700;
-    list-style: none;
-}
-
-.carrito{
-    width: 20%;
-    text-align: end;
-}
-
-h3{
-    text-align: center;
-    padding-top: 20px;
-}

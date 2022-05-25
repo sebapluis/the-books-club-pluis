@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/esm/Button';
+
 
 const ItemCount = ({initial, stock, onAdd}) => {
   const [count, setCount] = useState (initial);
@@ -15,11 +17,11 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
   return (
     <div>
-        <button onClick= {resta} > - </button>
+        <Button onClick= {resta} variant="dark" className='p-0 mb-2'> - </Button>
         <span className='cantidad'> { count } </span>
-        <button onClick= {suma} > + </button>
+        <Button onClick= {suma} variant="dark" className='p-0 mb-2'> + </Button>
         <div>
-            <button onClick={() => (count <= stock) && onAdd(count)}>Agregar al carrito</button>
+            <Button variant="dark" onClick={() => (count <= stock) && onAdd(count)}>Agregar al carrito</Button>
         </div>
     </div> 
   )
