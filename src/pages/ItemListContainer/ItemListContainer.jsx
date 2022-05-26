@@ -33,8 +33,11 @@ const ItemListContainer = ({ greeting }) =>{
 
     return (
         <>
-           <div className="container">
+           <div className="container-fluid">
+               <div className="container justify-content-center align-items-center">
                 <ItemList libros= { libros } /> 
+               </div>
+                 
             </div>                
         </>
     )

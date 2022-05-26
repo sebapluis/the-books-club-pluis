@@ -21,11 +21,11 @@ function ItemDetail( {libro} ) {
 
   return (
     <div className='container'>
-        <div className='ancho mt-3 mb-3'>
-            <div className='imgContainer'>
+        <div className='row  mt-3 mb-3 justify-content-center'>
+            <div className='col-12 col-md-6 order-first imgContainer'>
                 <img src={libro.imagen} alt="Imagen del libro" className='img-fluid' />
             </div>
-            <div className='infoContainer'>
+            <div className='col-12 col-md-6  order-second infoContainer'>
                 <h3 className='centrado'>{libro.title}</h3>
                 <p className='centrado'><b>Autor</b>: {libro.autor}</p>
                 <p className='centrado'><b>Editorial</b>: {libro.editorial}</p>

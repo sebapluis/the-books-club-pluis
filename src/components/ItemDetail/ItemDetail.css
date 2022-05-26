@@ -3,14 +3,6 @@
     width: 100%;
 }
 
-.imgContainer{
-    width: 50%;
-}
-
-.infoContainer{
-    width: 50%;
-}
-
 .centrado{
     text-align: center;
 }
@@ -21,4 +13,7 @@
 }
 .compra:hover{
     color: antiquewhite;
+}
+.maxAncho{
+    width: 100%;
 }

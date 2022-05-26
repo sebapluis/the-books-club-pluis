@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCartContext } from '../../context/CartContext';
+import Button from 'react-bootstrap/esm/Button';
 
 
 function CartItem ( {item} ) {
@@ -7,13 +8,13 @@ function CartItem ( {item} ) {
 
   return (
     <>
-    <div>
-        <h1> {item.title} </h1>
-        <h6>Unidades : {item.quantity} </h6>
-        <h6>Precio por unidad: € {item.precio}</h6>
-        <button onClick= {() => deleteOneItem(item.id)}> Eliminar una unidad </button>
+    <div className='container-fluid d-flex justify-content-center align-content-center'>
+        <h1 className='m-2'> {item.title} </h1>
+        <p>X{item.quantity} </p>
+        <h6>€ {item.precio}</h6>
+        <Button onClick= {() => deleteOneItem(item.id)}> - </Button>
         <br />
-        <button onClick= {() => deleteById(item.id)}> Eliminar </button>
+        <Button onClick= {() => deleteById(item.id)}> X </Button>
     </div>
     </>
   )

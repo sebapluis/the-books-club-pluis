@@ -10,7 +10,7 @@ const CartWidget = () => {
     return(
     <NavLink to= "/cart" className="none">
         <FaCartArrowDown className="cart none"/> 
-        <span> {totalCount() > 0 ? totalCount() : null} </span>
+        <span>{totalCount() > 0 ? totalCount() : null}</span>
     </NavLink>    
     )
 }
