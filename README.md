@@ -2,6 +2,8 @@ Este proyecto busca simular un ecommerce de libros, donde el usuario pueda tener
 Elegida esta ultima opcion se le redirigirá al checkout donde debera ingresar sus datos, realizada dicha accion con exito se le informara que su compra se realizo con exito y se le mostrata el codigo de la misma creado de forma automatica por firebase. 
 Para darle estilo a la pagina utilize bootstrap.
 
+https://youtu.be/avkOMXXK4lI simulacion de compra.
+
 
 
 
