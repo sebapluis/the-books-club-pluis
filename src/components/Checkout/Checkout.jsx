@@ -52,24 +52,26 @@ const Checkout = () => {
   return (
     <>
     {!orderId && <div>
-        <h1>Finalizando compra</h1>
+        <h1 className="centrado mt-3">Finalizando compra</h1>
         <hr />
-        <h4>Completar datos:</h4>
+        <h4 className="centrado mt-4">Completar datos:</h4>
         <br />
-        <form onSubmit={handleSubmit}>
-            <input type="text" name='Nombre' placeholder='Nombre' value={Nombre} onChange={handleInputChange} required />
+        <form onSubmit={handleSubmit} className="centrado">
+            <input type="text" name='Nombre' placeholder='Nombre' value={Nombre} onChange={handleInputChange} required className="m-3" />
             <br />
-            <input type="email" name='Email' placeholder='Email' value={Email} onChange={handleInputChange} required/>
+            <input type="email" name='Email' placeholder='Email' value={Email} onChange={handleInputChange} required className="m-3"/>
             <br />
-            <input type="number" name='Telefono' placeholder='Telefono' value={Telefono} onChange={handleInputChange} required/>
+            <input type="number" name='Telefono' placeholder='Telefono' value={Telefono} onChange={handleInputChange} required className="m-3"/>
             <br />
-            <input type="submit" value="Finalizar Compra" />
+            <input type="submit" value="Finalizar Compra" className="btn btn-success m-3"/>
         </form>
     </div> 
     } 
     <div>
         {orderId && (
-            <h4>Compra Realizada con exito, su codigo es: ${orderId}</h4>
+            <div className="container">
+                <h2 className="centrado mt-5">Compra Realizada con exito, su codigo es: ${orderId}</h2>
+            </div> 
         )}
     </div>  
     </>

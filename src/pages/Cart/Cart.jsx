@@ -12,7 +12,7 @@ function Cart (){
     <div>
         { cartList.map( (item) => (<CartItem key= {item.id} item={item} /> ))}
         {cartList.length > 0 ? (
-        <div className="container">
+        <div className="container mt-5 mb-5">
             <div className="centrado">
                 <h4 className="maxAncho">Precio total: € {totalPrice()} </h4>
             </div>
@@ -24,8 +24,8 @@ function Cart (){
             </div>
         </div>
         ) : (
-            <div>
-                <h1 className="centrado" >El carrito de compras esta vacio</h1>
+            <div className="mt-5">
+                <h1 className="centrado" >El carrito de compras se encuentra vacio</h1>
             </div>
             
         )

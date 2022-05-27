@@ -1,0 +1,18 @@
+.principal{
+    height: 150px;
+}
+.secundario{
+    width: 100%;
+}
+.imagen{
+    width: 20%;
+}
+.titulo{
+    width: 25%;
+}
+.precio{
+    width: 20%;
+}
+.botones{
+    width: 35%;
+}

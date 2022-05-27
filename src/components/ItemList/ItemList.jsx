@@ -9,8 +9,8 @@ function ItemList( {libros} ) {
       <>
     {libros.map( thislibro => {
         return(
-          <div className="h-75 d-inline-block m-5 p-2">
-            <Card style={{ width: '10rem' }}>
+          <div className="h-75 d-inline-block mx-5 my-3 p-2">
+            <Card style={{ width: '10rem'}} className="rounded">
               <div className='imgContenedor'>
               <Card.Img variant="top" src= {thislibro.imagen} className="img-fluid foto" />
               </div>
